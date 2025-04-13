@@ -8,6 +8,8 @@ Este proyecto es una revista digital enfocada en noticias deportivas destacadas.
 - **Navegación**: Enlaces a diferentes secciones como Blog, Noticias, Contacto, Configuración y Sobre mí.
 - **Temas populares**: Lista de artículos destacados.
 - **Últimas noticias**: Artículos con imágenes, videos y descripciones detalladas.
+- **Configuración**: Formulario para personalizar el perfil del usuario, cambiar la contraseña y gestionar preferencias.
+- **Contacto**: Formulario para que los usuarios puedan enviar mensajes, dudas o comentarios.
 - **Sobre mí**: Información sobre el autor de la revista.
 - **Pie de página**: Información de contacto, audio y glosario de términos.
 
