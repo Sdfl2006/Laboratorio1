@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Programación Web</title>
+        <link rel="icon" href="https://elucabista.com/wp-content/uploads/2024/05/el-ucabista-favicon.png">
+    </head>
+    <body>
+
+        <!-- Estructura Semántica -->
+        <header>
+            <h1>Mi Sitio Web Completo</h1>
+            <p>Un ejemplo con todas las etiquetas HTML esenciales</p>
+        </header>
+        
+        <nav>
+            <div><a href="http://127.0.0.1:5500/index.html">Best Website ever</a></div>
+            <div><a href="#inicio">Inicio</a></div>
+            <div><a href="#articulos">Artículos</a></div>
+            <div><a href="#multimedia">Multimedia</a></div>
+            <div><a href="#contacto">Contacto</a></div>
+        </nav>
+
+        <main>
+            <article>
+                <!-- Sección con etiquetas de texto -->
+                <section id="texto">
+                    <h2>Etiquetas de Texto</h2>
+                    
+                    <h3>Encabezados</h3>
+                    <h1>Encabezado 1</h1>
+                    <h2>Encabezado 2</h2>
+                    <h3>Encabezado 3</h3>
+                    <h4>Encabezado 4</h4>
+                    <h5>Encabezado 5</h5>
+                    <h6>Encabezado 6</h6>
+                    
+                    <h3>Párrafos y formato</h3>
+                    <p>Este es un párrafo normal. <span>Este texto está dentro de un span</span> que permite aplicar estilos específicos.</p>
+                    
+                    <p><strong>Textoss importante</strong>, <em>texto con énfasis</em>, <b>texto en negrita</b>, <i>texto en cursiva</i>, <u>texto subrayado</u>, y <mark>texto resaltado</mark>.</p>
+                    
+                    <blockquote>
+                        "Esta es una cita en bloque. HTML es el lenguaje fundamental de la web."
+                        <cite>Tim Berners-Lee</cite>
+                    </blockquote>
+                    
+                    <p>Una cita corta: <q>Saber no es suficiente, debemos aplicar.</q></p>
+                    
+                    <p>Texto con<br>salto de línea.</p>
+                    
+                    <hr>
+                    <hr>
+                    <p>Línea horizontal arriba para separar contenido.</p>
+                </section>
+
+                <!-- Sección con etiquetas multimedia -->
+                <section id="multimedia">
+                    <h2>Elementos Multimedia</h2>
+                    
+                    <div class="media-container">
+                        <h3>Imagen</h3>
+                        <img src="https://elucabista.com/wp-content/uploads/2017/05/aulas.jpg" alt="Imagen de ejemplo" width="800">
+                    </div>
+                    
+                    <div class="media-container">
+                        <h3>Imagen con figura y leyenda</h3>
+                        <figure>
+                            <img src="https://elucabista.com/wp-content/uploads/2020/11/ucab.jpg" alt="Imagen con descripción" width="600">
+                            <figcaption>Figura 1: Esta es una leyenda descriptiva para la imagen.</figcaption>
+                        </figure>
+                    </div>
+                    
+                    <div class="media-container">
+                        <h3>Video</h3>
+                        <video width="800" controls>
+                            <source src="https://samplelib.com/lib/preview/mp4/sample-5s.mp4" type="video/mp4">
+                            Tu navegador no soporta el elemento de video.
+                        </video>
+                    </div>
+                    
+                    <div class="media-container">
+                        <h3>Audio</h3>
+                        <audio controls>
+                            <source src="https://samplelib.com/lib/preview/mp3/sample-3s.mp3" type="audio/mpeg">
+                            Tu navegador no soporta el elemento de audio.
+                        </audio>
+                    </div>
+                    
+                    <div class="media-container">
+                        <h3>Iframe (contenido externo)</h3>
+                        <iframe 
+                            width="800" 
+                            height="450" 
+                            src="https://www.openstreetmap.org/export/embed.html?bbox=-0.004017949104309083%2C51.47612752641776%2C0.00030577182769775396%2C51.478569861898606&layer=mapnik" 
+                            frameborder="0">
+                        </iframe>
+                    </div>
+                    
+                    <div class="media-container">
+                        <h3>SVG (gráficos vectoriales)</h3>
+                        <svg width="200" height="200">
+                            <circle cx="100" cy="100" r="80" fill="#3498db" />
+                            <rect x="50" y="50" width="100" height="100" fill="#e74c3c" opacity="0.7" />
+                            <text x="100" y="110" font-family="Arial" font-size="20" text-anchor="middle" fill="#fff">SVG</text>
+                        </svg>
+                    </div>
+                </section>
+            </article>
+
+            <aside>
+                <h3>Barra Lateral</h3>
+                <p>Este es un aside que contiene contenido secundario o relacionado.</p>
+                
+                <blockquote>
+                    "El contenido en aside complementa pero no es esencial para el artículo principal."
+                </blockquote>
+            </aside>
+        </main>
+
+        <footer>
+            <p>&copy; 2025 Mi Sitio Web. Todos los derechos reservados.</p>
+            <address>
+                Contacto: <a href="mailto:info@misitio.com">info@misitio.com</a>
+            </address>
+        </footer>
+    </body>
+</html>

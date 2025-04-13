@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guía de Elementos HTML</title>
+</head>
+<body>
+    <h1>Guía de Elementos HTML para Clase</h1>
+    
+    <!-- Sección de Listas -->
+    <section>
+        <h2>1. Listas</h2>
+        
+        <h3>Lista Ordenada (ol)</h3>
+        <ol>
+            <li>Primer elemento</li>
+            <li>Segundo elemento</li>
+            <li>Tercer elemento</li>
+        </ol>
+        
+        <h3>Lista Desordenada (ul)</h3>
+        <ul>
+            <li>Elemento 1</li>
+            <li>Elemento 2</li>
+            <li>Elemento 3</li>
+        </ul>
+        
+        <h3>Lista de Definición (dl)</h3>
+        <dl>
+            <dt>HTML</dt>
+            <dd>Lenguaje de marcado para crear páginas web</dd>
+            
+            <dt>CSS</dt>
+            <dd>Lenguaje de estilos para diseñar páginas web</dd>
+            
+            <dt>JavaScript</dt>
+            <dd>Lenguaje de programación para interactividad</dd>
+        </dl>
+    </section>
+    
+    <!-- Sección de Tablas -->
+    <section>
+        <h2>2. Tablas</h2>
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>Nombre</th>
+                    <th>Edad</th>
+                    <th>ciudad</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Juan Pérez</td>
+                    <td>20</td>
+                    <td>Madrid</td>
+                </tr>
+                <tr>
+                    <td>María Gómez</td>
+                    <td>32</td>
+                    <td>Barcelona</td>
+                </tr>
+                <tr>
+                    <td>Carlos Ruiz</td>
+                    <td>25</td>
+                    <td>Valencia</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="2">Total personas</td>
+                    <td>3</td>
+                </tr>
+            </tfoot>
+        </table>
+    </section>
+    
+    <!-- Sección de Formularios -->
+    <section>
+        <h2>3. Formularios</h2>
+        
+        <form action="#" method="post">
+            <fieldset>
+                <legend>Datos Personales</legend>
+                
+                <label for="nombre">Nombre completo:</label>
+                <input type="text" id="nombre" name="nombre" placeholder="Ej: Juan Pérez" required>
+                
+                <label for="email">Correo electrónico:</label>
+                <input type="email" id="email" name="email" placeholder="ejemplo@dominio.com" required>
+                
+                <label for="password">Contraseña:</label>
+                <input type="password" id="password" name="password" minlength="8" required>
+                
+                <label for="telefono">Teléfono:</label>
+                <input type="tel" id="telefono" name="telefono" pattern="[0-9]{9}" placeholder="123456789">
+            </fieldset>
+            
+            <fieldset>
+                <legend>Preferencias</legend>
+                
+                <label>Género:</label>
+                <label><input type="radio" name="genero" value="hombre"> Hombre</label>
+                <label><input type="radio" name="genero" value="mujer"> Mujer</label>
+                <label><input type="radio" name="genero" value="otro"> Otro</label>
+                
+                <label>Intereses:</label>
+                <label><input type="checkbox" name="intereses" value="deportes"> Deportes</label>
+                <label><input type="checkbox" name="intereses" value="musica"> Música</label>
+                <label><input type="checkbox" name="intereses" value="lectura"> Lectura</label>
+                
+                <label for="edad">Edad:</label>
+                <input type="number" id="edad" name="edad" min="18" max="99">
+                
+                <label for="fecha">Fecha de nacimiento:</label>
+                <input type="date" id="fecha" name="fecha">
+                
+                <label for="color">Color favorito:</label>
+                <input type="color" id="color" name="color" value="#ff0000">
+                
+                <label for="satisfaccion">Nivel de satisfacción:</label>
+                <input type="range" id="satisfaccion" name="satisfaccion" min="1" max="10" value="5">
+            </fieldset>
+            
+            <fieldset>
+                <legend>Información Adicional</legend>
+                
+                <label for="pais">País:</label>
+                <select id="pais" name="pais">
+                    <option value="">Seleccione un país</option>
+                    <option value="es">España</option>
+                    <option value="mx">México</option>
+                    <option value="ar">Argentina</option>
+                    <option value="co">Colombia</option>
+                </select>
+                
+                <label for="comentarios">Comentarios:</label>
+                <textarea id="comentarios" name="comentarios" rows="4" placeholder="Escribe tus comentarios aquí..."></textarea>
+                
+                <label for="archivo">Subir archivo:</label>
+                <input type="file" id="archivo" name="archivo" accept=".pdf,.doc,.docx">
+            </fieldset>
+            
+            <!--Botones-->
+            <div style="margin-top: 20px;">
+                <button type="submit">Enviar</button>
+                <button type="reset">Limpiar</button>
+                <button type="button" onclick="alert('Botón de ejemplo')">Botón normal</button>
+            </div>
+        </form>
+    </section>
+</body>
+</html>

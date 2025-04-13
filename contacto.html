@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de contacto</title>
+</head>
+<body>
+    <h1>Formulario de contacto</h1>
+    <p>En caso que quieras participar, contáctanos a través de este formulario <strong>¡No te la pierdas!</strong></p>
+
+    <!-- Sección de Formularios -->
+    <section>
+        <h2>Coloca tu información de contacto:</h2>
+        <form action="#" method="post">
+            <fieldset>
+                <legend> <strong> Datos Personales </strong> </legend>
+                
+                <label for="nombre">Nombre completo:</label>
+                <input type="text" id="nombre" name="nombre" placeholder="Ej: Juan Pérez" required>
+                
+                <label for="email">Correo electrónico:</label>
+                <input type="email" id="email" name="email" placeholder="ejemplo@dominio.com" required>
+            </fieldset>
+            
+            <fieldset>
+                <legend> <strong> Tema del mensaje </strong> </legend>
+                <select name="select">
+                    <option value="value1">Quiero participar</option>
+                    <option value="value2" >Dudas y consultas</option>
+                    <option value="value3">Interesado en saber más</option>
+
+                </select>
+            </fieldset>
+            
+            <fieldset>
+                <legend><strong>Descripción del mensaje</strong></legend>
+            
+                <label for="comentarios" style="display: block;">Comentarios:</label>
+                <textarea id="comentarios" name="comentarios" rows="4" placeholder="Escribe tus comentarios aquí..." style="display: block;"></textarea>
+            </fieldset>
+            
+            <!--Botones-->
+            <div style="margin-top: 20px;">
+                <button type="submit">Enviar</button>
+                <button type="reset">Limpiar</button>
+        </form>
+    </section>
+</body>
+</html>
