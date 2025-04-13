@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Configuración</title>
+    <link rel="icon" href="imagenes/real-madrid.png" type="image/png" sizes="16x16">
+</head>
+<body>
+    <header>
+        <h1>Configuración</h1>
+    </header>
+
+    <main>
+        <!-- Formulario de Configuración de Perfil -->
+        <form>
+            <fieldset>
+                <legend>Configuración de perfil</legend>
+
+                <label for="imagen-perfil">Imagen de perfil:</label>
+                <input type="file" id="imagen-perfil" name="imagen-perfil">
+                <br><br>
+
+                <label for="fecha-nacimiento">Fecha de nacimiento:</label>
+                <input type="date" id="fecha-nacimiento" name="fecha-nacimiento">
+                <br><br>
+
+                <label>Género:</label>
+                <input type="radio" id="genero-masculino" name="genero" value="masculino">
+                <label for="genero-masculino">Masculino</label>
+                <input type="radio" id="genero-femenino" name="genero" value="femenino">
+                <label for="genero-femenino">Femenino</label>
+                <input type="radio" id="genero-otro" name="genero" value="otro">
+                <label for="genero-otro">Otro</label>
+                <br><br>
+
+                <label for="color-primario">Color primario de la página:</label>
+                <input type="color" id="color-primario" name="color-primario">
+                <br><br>
+
+                <button type="submit">Guardar configuración</button>
+            </fieldset>
+        </form>
+
+        <br><br>
+
+        <!-- Formulario para Cambiar Clave -->
+        <form>
+            <fieldset>
+                <legend>Cambiar clave</legend>
+
+                <label for="nombre-usuario">Nombre de usuario:</label>
+                <input type="text" id="nombre-usuario" name="nombre-usuario">
+                <br><br>
+
+                <label for="antigua-clave">Antigua contraseña:</label>
+                <input type="password" id="antigua-clave" name="antigua-clave">
+                <br><br>
+
+                <label for="nueva-clave">Nueva contraseña:</label>
+                <input type="password" id="nueva-clave" name="nueva-clave">
+                <br><br>
+
+                <button type="submit">Cambiar clave</button>
+            </fieldset>
+        </form>
+
+        <br>
+
+        <!-- Tabla de Usuarios -->
+        <section>
+            <h2>Usuarios registrados</h2>
+            <table border="1" style="width: 100%; text-align: center;">
+                <thead>
+                    <tr>
+                        <th>Imagen de perfil</th>
+                        <th>Correo</th>
+                        <th>Nombre</th>
+                        <th>Apellido</th>
+                        <th>Cédula</th>
+                        <th>Fecha de nacimiento</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><img src="imagenes/imagenes/Bombombini_Gusini.webp" alt="Usuario 1" width="50"></td>
+                        <td>juan.perez@example.com</td>
+                        <td>Juan</td>
+                        <td>Pérez</td>
+                        <td>12345678</td>
+                        <td>1990-05-15</td>
+                    </tr>
+                    <tr>
+                        <td><img src="imagenes/imagenes/tralalero.avif" alt="Usuario 2" width="50"></td>
+                        <td>maria.gomez@example.com</td>
+                        <td>María</td>
+                        <td>Gómez</td>
+                        <td>87654321</td>
+                        <td>1985-09-22</td>
+                    </tr>
+                    <tr>
+                        <td><img src="imagenes/imagenes/TungTungTungSahur.webp" alt="Usuario 3" width="50"></td>
+                        <td>carlos.lopez@example.com</td>
+                        <td>Carlos</td>
+                        <td>López</td>
+                        <td>11223344</td>
+                        <td>1992-03-10</td>
+                    </tr>
+                    <tr>
+                        <td><img src="imagenes/imagenes/lirilia.jpeg" alt="Usuario 4" width="50"></td>
+                        <td>ana.martinez@example.com</td>
+                        <td>Ana</td>
+                        <td>Martínez</td>
+                        <td>55667788</td>
+                        <td>1998-07-30</td>
+                    </tr>
+                    <tr>
+                        <td><img src="imagenes/imagenes/cocodrilo.jpeg" alt="Usuario 5" width="50"></td>
+                        <td>luis.fernandez@example.com</td>
+                        <td>Luis</td>
+                        <td>Fernández</td>
+                        <td>99887766</td>
+                        <td>1980-12-05</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+</body>
+</html>

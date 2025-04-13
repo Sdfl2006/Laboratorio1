@@ -13,17 +13,25 @@
         <h1>Mi Revista Digital</h1>
         <br>
         <h2>La mejor revista para estar informado de la actualidad deportiva</h2>
+        <nav>
+            <ul>
+                <br>
+                <li><a href="#temas-populares">Blog</a></li>
+                <li><a href="#articulo1">Noticias</a></li>
+                <li><a href="contacto.html" target="_blank">Contacto</a></li>
+                <li><a href="configuración.html" target="_blank">Configuración</a></li>
+                <li><a href="#sobremi">Sobre mí</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <!-- Menú de navegación -->
-    <nav>
-        <ul>
-            <li><a href="#">Inicio</a></li>
-            <li><a href="#">Noticias</a></li>
-            <li><a href="#">Blog</a></li>
-        </ul>
-        <br>
-    </nav>
+    <aside id="temas-populares">
+        <h2>Temas más populares</h2>
+        <ol>
+            <li><a href="#articulo1">Buscando el milagro</a></li>
+            <li><a href="#articulo2"> Triple doble es sinónimo de Nikola Jokic</a></li>
+        </ol>
+    </aside>
 
     <!-- Contenido principal -->
     <main>
@@ -32,7 +40,7 @@
             <h2>Últimas noticias</h2>
 
             <!-- Primer artículo -->
-            <article>
+            <article id="articulo1">
                 <h3>Buscando el milagro</h3>
                 <p>El Real Madrid busca una remontada histórica ante el Arsenal en el mítico Santiago Bernabéu. 
                     Después de un partido de ida complicado en Londres, donde el equipo español sufrió una derrota por 3-1, 
@@ -42,7 +50,7 @@
                     máximo, pero el Real Madrid ha demostrado ser un equipo que nunca se rinde en los momentos más difíciles. <br></p>
                     <br>
                 <figure style="text-align: center;">
-                    <img src="imagenes/98.webp" alt="Imagen de la noticia 2" width="633" height="356">
+                    <img src="imagenes/imagenes/98.webp" alt="Imagen de la noticia 2" width="633" height="356">
                     <figcaption><strong> Mbappé y Vinicius buscan su gran noche. </strong></p></figcaption>
                 </figure>
                 <br>
@@ -54,7 +62,7 @@
             </article>
 
             <!-- Segundo artículo -->
-            <article>
+            <article id="articulo2">
                 <h3>Triple doble es sinónimo de Nikola Jokic</h3>
                 <p>Nikola Jokic, el talentoso pívot serbio de los Denver Nuggets, ha logrado lo que parecía imposible: 
                     promediar un triple doble durante toda la temporada regular. Este logro lo consolida como uno de los 
@@ -65,13 +73,13 @@
                     mundo celebran este hito histórico, que marca un antes y un después en el deporte.<br></p>
                     <br>
                 <figure style="text-align: center;">
-                    <img src="imagenes/b6db1a30-176a-11f0-8a1e-3ff815141b98.jpg" alt="Imagen de la noticia 1" width="633" height="356">
+                    <img src="imagenes/imagenes/b6db1a30-176a-11f0-8a1e-3ff815141b98.jpg" alt="Imagen de la noticia 1" width="633" height="356">
                     <figcaption><strong> El serbio se convirtió en el primer pivot en lograrlo. </strong></p></figcaption>
                 </figure>
                 <br>
                 <div style="text-align: center; margin-top: 20px;">
                     <video width="360" height="360" controls>
-                        <source src="imagenes/ssstwitter.com_1744428500705.mp4" type="video/mp4">
+                        <source src="imagenes/audio y videos/ssstwitter.com_1744428500705.mp4" type="video/mp4">
                         Tu navegador no soporta el elemento de video.
                     </video>
                     <figcaption><strong> Momentos destacados de Nikola Jokic vs Memphis Grizzlies </strong></p></figcaption>
@@ -82,7 +90,7 @@
     </main>
 
     <!-- Barra lateral -->
-    <aside>
+    <aside id="sobremi">
         <h2>Sobre mí</h2>
         <p>Mi nombre es Santiago De Freitas y soy el autor de esta revista donde me gusta hablar sobre las últimas noticias deportivas destacadas.</p>
     </aside>
@@ -90,7 +98,15 @@
     <!-- Pie de página -->
     <footer>
         <p>Contacto: santidefreitas@gmail.com</p>
-        <audio src="imagenes/Hala Madrid ... y nada más.mp3" loop controls>
+        <audio src="imagenes/audio y videos/Hala Madrid ... y nada más.mp3" loop controls>
             Tu navegador no soporta el elemento audio.
         </audio>
+        <dl>
+            <dt>API</dt>
+            <dd>Interfaz de programación de aplicaciones que permite la comunicación entre diferentes sistemas.</dd>
+            <dt>SEO</dt>
+            <dd>Optimización para motores de búsqueda, utilizada para mejorar la visibilidad de un sitio web.</dd>
+        </dl>
+        <p>&copy; 2023 Mi Revista Digital. Todos los derechos reservados.</p>
+    </footer>
 </html>
