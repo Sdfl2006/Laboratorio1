@@ -1,19 +1,18 @@
 /* Fuente personalizada desde Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Playfair+Display:wght@700&display=swap');
-
 /* Estilo para el body */
 body {
-    background: linear-gradient(to bottom, #2d2d2d, #4d4d4d); /* Fondo degradado */
-    color: #e5e5e5; /* Texto claro */
-    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(to bottom, var(--header-background-color), #4d4d4d);
+    color: var(--main-text-color);
+    font-family: var(--main-font);
     margin: 0;
     padding: 0;
 }
 
 /* Estilo para el header */
 header {
-    background-color: #2d2d2d;
-    color: #f5f5f5;
+    background-color: var(--header-background-color);
+    color: var(--main-text-color); /* Reemplazado #f5f5f5 */
     padding: 20px;
     text-align: center;
 }
@@ -22,28 +21,174 @@ header {
 footer {
     margin-top: 10px;
     padding: 15px;
-    border-top: 2px solid #6e6e6e; /* Borde gris tenue */
-    background-color: #1a1a1a;
-    color: #d4d4d4;
+    border-top: 2px solid var(--border-color);
+    background-color: var(--footer-background-color);
+    color: var(--secondary-text-color);
     text-align: center;
 }
 
 /* Estilo para el nav */
 nav {
-    background-color: #3a3a3a;
+    background-color: var(--nav-background-color);
     color: #ffffff;
     padding: 10px;
     text-align: center;
     border-radius: 5px;
 }
 
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+    background-color: var(--nav-hover-background-color);
+}
+
+nav a:focus {
+    background-color: var(--nav-focus-background-color);
+    outline: 2px solid var(--primary-button-hover-color);
+}
+
+/* Botón flotante */
+#chat-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: var(--primary-button-background-color);
+    color: #000;
+    border: none;
+    border-radius: 50px;
+    padding: 15px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: var(--button-shadow);
+    transition: background-color 0.3s ease;
+}
+
+#chat-button:hover {
+    background-color: var(--primary-button-hover-color);
+}
+
+/* Inputs de formularios */
+input:focus, textarea:focus, select:focus {
+    border-color: var(--primary-button-hover-color);
+    box-shadow: 0 0 5px var(--primary-button-hover-color);
+    outline: none;
+}
+
+/* Filas de la tabla de usuarios al pasar el mouse */
+table tbody tr:hover {
+    background-color: var(--table-row-hover-background-color);
+    color: var(--table-row-hover-text-color);
+    cursor: pointer;
+}
+/* Variables globales */
+:root {
+    /* Colores */
+    --main-text-color: #e5e5e5;
+    --secondary-text-color: #d4d4d4;
+    --header-background-color: #2d2d2d;
+    --footer-background-color: #1a1a1a;
+    --nav-background-color: #3a3a3a;
+    --nav-hover-background-color: #4d4d4d;
+    --nav-focus-background-color: #5a5a5a;
+    --border-color: #6e6e6e;
+    --primary-button-background-color: #ffcc00;
+    --primary-button-hover-color: #ffd700;
+    --table-row-hover-background-color: #3a3a3a;
+    --table-row-hover-text-color: #ffd700;
+    --form-background-color: #3f3f3f;
+    --fieldset-background-color: #4d4d4d;
+
+    /* Sombras */
+    --text-shadow-light: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    --text-shadow-medium: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    --button-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    --button-hover-shadow: 0 6px 8px rgba(0, 0, 0, 0.3);
+
+    /* Fuentes */
+    --main-font: 'Roboto', sans-serif;
+    --title-font: 'Playfair Display', serif;
+}
+
+/* Estilo para el body */
+body {
+    background: linear-gradient(to bottom, var(--header-background-color), #4d4d4d); /* Fondo degradado */
+    color: var(--main-text-color); /* Texto claro */
+    font-family: var(--main-font);
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilo para el header */
+header {
+    background-color: var(--header-background-color);
+    color: var(--main-text-color); /* Reemplazado #f5f5f5 */
+    padding: 20px;
+    text-align: center;
+}
+
+/* Márgenes y relleno para el footer */
+footer {
+    margin-top: 10px;
+    padding: 15px;
+    border-top: 2px solid var(--border-color); /* Borde gris tenue */
+    background-color: var(--footer-background-color);
+    color: var(--secondary-text-color);
+    text-align: center;
+}
+
+/* Estilo para el nav */
+nav {
+    background-color: var(--nav-background-color);
+    color: #ffffff;
+    padding: 10px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+nav ul {
+    display: flex; /* Usar Flexbox */
+    justify-content: center; /* Centrar horizontalmente */
+    gap: 15px; /* Espaciado entre los elementos */
+    list-style: none; /* Quitar viñetas */
+    padding: 0;
+    margin: 0;
+}
+
+nav li {
+    margin: 0;
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+    background-color: var(--nav-hover-background-color); /* Fondo al pasar el cursor */
+}
+
+nav a:focus {
+    background-color: var(--nav-focus-background-color); /* Fondo más oscuro */
+    outline: 2px solid var(--primary-button-hover-color); /* Borde de enfoque */
+}
+
 /* Márgenes y relleno globales para secciones */
 section {
     margin: 10px auto;
     padding: 15px;
-    border: 2px solid #6e6e6e; /* Borde gris tenue */
+    border: 2px solid var(--border-color); /* Borde gris tenue */
     border-radius: 10px;
-    background-color: #3f3f3f;
+    background-color: var(--form-background-color);
     color: #ffffff;
 }
 
@@ -51,65 +196,66 @@ section {
 article {
     margin: 10px 0;
     padding: 10px;
-    border: 1px solid #6e6e6e; /* Borde gris tenue */
+    border: 1px solid var(--border-color); /* Borde gris tenue */
     border-radius: 5px;
-    background-color: #2d2d2d;
+    background-color: var(--header-background-color);
 }
 
 /* Estilo para los títulos */
 h1 {
-    font-family: 'Playfair Display', serif;
+    font-family: var(--title-font);
     font-weight: 700;
-    color: #f5f5f5; /* Texto claro */
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Sombra para destacar */
+    color: var(--main-text-color); /* Reemplazado #f5f5f5 */
+    text-shadow: var(--text-shadow-light); /* Sombra para destacar */
     text-align: center;
     margin-bottom: 20px;
 }
 
 h2, h3 {
-    font-family: 'Playfair Display', serif;
+    font-family: var(--title-font);
     font-weight: 700;
-    color: #f5f5f5;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    color: var(--main-text-color); /* Reemplazado #f5f5f5 */
+    text-shadow: var(--text-shadow-medium);
 }
 
 /* Estilo para los párrafos */
 p {
-    font-family: 'Roboto', sans-serif;
+    font-family: var(--main-font);
     line-height: 1.8;
     letter-spacing: 0.5px;
     text-align: justify;
-    color: #d4d4d4;
+    color: var(--secondary-text-color); /* Reemplazado #d4d4d4 */
 }
 
 /* Márgenes y relleno para aside */
 aside {
-    margin: 10px 0;
+    position: sticky;
+    margin: 0; /* Elimina márgenes adicionales */
     padding: 10px;
-    border: 2px solid #6e6e6e; /* Borde gris tenue */
+    border: 2px solid var(--border-color); /* Borde gris tenue */
     border-radius: 10px;
-    background-color: #3f3f3f;
-    color: #e5e5e5;
+    background-color: var(--form-background-color); /* Fondo gris oscuro */
+    color: var(--main-text-color); /* Texto claro */
 }
 
 /* Estilo general para los enlaces */
 a {
-    color: #ffcc00; /* Azul claro para destacar */
+    color: var(--primary-button-background-color); /* Azul claro para destacar */
     text-decoration: none; /* Sin subrayado */
 }
 
 a:hover {
-    color: #ffcc00; /* Azul más intenso al pasar el cursor */
+    color: var(--primary-button-background-color); /* Azul más intenso al pasar el cursor */
     text-decoration: underline; /* Subrayado al pasar el cursor */
 }
 
 /* Estilo específico para enlaces dentro de aside */
 aside a {
-    color: #ffd700; /* Amarillo para destacar en aside */
+    color: var(--primary-button-hover-color); /* Amarillo para destacar en aside */
 }
 
 aside a:hover {
-    color: #ffcc00; /* Amarillo más oscuro al pasar el cursor */
+    color: var(--primary-button-background-color); /* Amarillo más oscuro al pasar el cursor */
     text-decoration: underline;
 }
 
@@ -124,52 +270,58 @@ ul, ol, dl {
 
 /* Cambiar el color de las viñetas */
 ul li::marker, ol li::marker {
-    color: #ffd700; /* Color amarillo para las viñetas */
+    color: var(--primary-button-hover-color); /* Color amarillo para las viñetas */
 }
 
 /* Márgenes y relleno para tablas */
 table {
-    margin: 10px auto;
-    padding: 10px;
-    border: 2px solid #6e6e6e; /* Borde gris tenue */
-    border-radius: 5px;
-    background-color: #4d4d4d;
     width: 100%;
     border-collapse: collapse;
+    background-color: var(--form-background-color); /* Reemplazado #4d4d4d */
+    color: var(--main-text-color); /* Reemplazado #ffffff */
+    border: 1px solid var(--border-color); /* Bordes grises */
 }
 
-thead {
-    background-color: #3a3a3a;
-    color: #ffffff;
-    font-family: 'Roboto', sans-serif;
+table th, table td {
+    padding: 10px;
+    border: 1px solid var(--border-color); /* Bordes grises */
+    text-align: center;
+}
+
+table th {
+    background-color: var(--nav-background-color); /* Fondo más oscuro para encabezados */
     font-weight: bold;
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
-    padding: 10px;
-    text-align: center;
-    border-bottom: 2px solid #6e6e6e; /* Borde gris tenue */
 }
 
-td {
-    padding: 10px;
-    text-align: center;
-    border: 1px solid #6e6e6e; /* Bordes grises tenues */
+/* Filas de la tabla de usuarios al pasar el mouse */
+table tbody tr:hover {
+    background-color: var(--table-row-hover-background-color); /* Fondo más oscuro */
+    color: var(--table-row-hover-text-color); /* Texto amarillo */
+    cursor: pointer; /* Cambiar el cursor a puntero */
 }
 
 /* Márgenes y relleno para formularios */
 form {
     margin: 10px auto;
     padding: 15px;
-    border: 2px solid #6e6e6e; /* Borde gris tenue */
+    border: 2px solid var(--border-color); /* Borde gris tenue */
     border-radius: 10px; /* Bordes redondeados */
-    background-color: #3f3f3f; /* Fondo gris oscuro */
+    background-color: var(--form-background-color); /* Fondo gris oscuro */
     color: #ffffff;
+}
+
+/* Inputs de formularios */
+input:focus, textarea:focus, select:focus {
+    border-color: var(--primary-button-hover-color); /* Cambiar color del borde */
+    box-shadow: 0 0 5px var(--primary-button-hover-color); /* Agregar un brillo */
+    outline: none; /* Quitar borde de enfoque predeterminado */
 }
 
 /* Márgenes y relleno para figuras */
 figure {
     margin: 10px auto;
     padding: 10px;
-    border: 1px solid #6e6e6e; /* Borde gris tenue */
+    border: 1px solid var(--border-color); /* Borde gris tenue */
     border-radius: 5px;
     background-color: #4d4d4d;
     text-align: center;
@@ -194,19 +346,100 @@ img {
 fieldset {
     margin: 10px auto; /* Espaciado vertical reducido */
     padding: 15px; /* Relleno interno */
-    border: 2px solid #6e6e6e; /* Borde gris tenue */
+    border: 2px solid var(--border-color); /* Borde gris tenue */
     border-radius: 10px; /* Bordes redondeados */
-    background-color: #3f3f3f; /* Fondo gris oscuro */
-    color: #ffffff; /* Texto claro */
+    background-color: var(--form-background-color); /* Fondo gris oscuro */
+    color: var(--main-text-color); /* Texto claro */
 }
 
 /* Estilo para legend dentro de fieldset */
 fieldset legend {
-    font-family: 'Roboto', sans-serif;
+    font-family: var(--main-font);
     font-weight: bold;
-    color: #ffffff; /* Texto claro */
+    color: var(--main-text-color); /* Texto claro */
     padding: 0 10px; /* Espaciado interno */
-    border: 1px solid #6e6e6e; /* Borde gris tenue */
+    border: 1px solid var(--border-color); /* Borde gris tenue */
     border-radius: 5px; /* Bordes redondeados */
-    background-color: #4d4d4d; /* Fondo gris intermedio */
+    background-color: var(--fieldset-background-color); /* Fondo gris intermedio */
+}
+
+/* Estilo para el main */
+main {
+    display: grid; /* Usar Grid */
+    grid-template-columns: 3fr 1fr; /* Tres partes para las noticias y una para el aside */
+    gap: 20px; /* Espaciado entre columnas */
+    margin: 20px;
+}
+
+/* Botón flotante */
+#chat-button {
+    position: fixed; /* Posición fija en la pantalla */
+    bottom: 20px; /* Separación desde la parte inferior */
+    right: 20px; /* Separación desde la parte derecha */
+    background-color: var(--primary-button-background-color); /* Color de fondo */
+    color: #000; /* Color del texto */
+    border: none;
+    border-radius: 50px; /* Botón redondeado */
+    padding: 15px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: var(--button-shadow); /* Sombra */
+    transition: background-color 0.3s ease;
+}
+
+#chat-button:hover {
+    background-color: var(--primary-button-hover-color); /* Color más claro al pasar el cursor */
+}
+
+/* Botones de formulario y botón de chat */
+button:hover, button:focus {
+    background-color: var(--primary-button-hover-color); /* Color más claro */
+    color: #000; /* Texto negro */
+    box-shadow: var(--button-hover-shadow); /* Sombra más intensa */
+    outline: none; /* Quitar borde de enfoque predeterminado */
+}
+
+/* Contenedor principal de configuración */
+#configuracion-principal {
+    display: grid; /* Usar Grid */
+    grid-template-columns: 1fr 1fr; /* Dos columnas iguales */
+    gap: 20px; /* Espaciado entre columnas y filas */
+    margin: 20px;
+}
+
+/* Formularios ocupan una columna completa */
+#configuracion-principal form {
+    grid-column: span 1; /* Cada formulario ocupa una columna */
+    padding: 15px;
+    border: 2px solid var(--border-color); /* Borde gris tenue */
+    border-radius: 10px;
+    background-color: var(--form-background-color); /* Fondo gris oscuro */
+    color: #ffffff; /* Texto claro */
+}
+
+/* Tabla ocupa ambas columnas */
+#configuracion-principal section {
+    grid-column: span 2; /* La tabla ocupa ambas columnas */
+    margin-top: 20px;
+}
+
+/* Estilo para la tabla */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: var(--form-background-color); /* Reemplazado #4d4d4d */
+    color: var(--main-text-color); /* Reemplazado #ffffff */
+    border: 1px solid var(--border-color); /* Bordes grises */
+}
+
+table th, table td {
+    padding: 10px;
+    border: 1px solid var(--border-color); /* Bordes grises */
+    text-align: center;
+}
+
+table th {
+    background-color: var(--nav-background-color); /* Fondo más oscuro para encabezados */
+    font-weight: bold;
 }
