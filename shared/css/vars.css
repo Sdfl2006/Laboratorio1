@@ -1,0 +1,22 @@
+:root {
+    --main-text-color: #e5e5e5;
+    --secondary-text-color: #d4d4d4;
+    --header-background-color: #2d2d2d;
+    --footer-background-color: #1a1a1a;
+    --nav-background-color: #3a3a3a;
+    --nav-hover-background-color: #4d4d4d;
+    --nav-focus-background-color: #5a5a5a;
+    --border-color: #6e6e6e;
+    --primary-button-background-color: #ffcc00;
+    --primary-button-hover-color: #ffd700;
+    --table-row-hover-background-color: #3a3a3a;
+    --table-row-hover-text-color: #ffd700;
+    --form-background-color: #3f3f3f;
+    --fieldset-background-color: #4d4d4d;
+    --text-shadow-light: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    --text-shadow-medium: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    --button-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    --button-hover-shadow: 0 6px 8px rgba(0, 0, 0, 0.3);
+    --main-font: 'Roboto', sans-serif;
+    --title-font: 'Playfair Display', serif;
+}

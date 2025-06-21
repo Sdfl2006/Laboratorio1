@@ -1,0 +1,28 @@
+fieldset {
+    margin: 10px auto;
+    padding: 15px;
+    border: 2px solid var(--border-color);
+    border-radius: 10px;
+    background-color: var(--form-background-color);
+    color: var(--main-text-color);
+}
+
+fieldset legend {
+    font-family: var(--main-font);
+    font-weight: bold;
+    color: var(--main-text-color);
+    padding: 0 10px;
+    border: 1px solid var(--border-color);
+    border-radius: 5px;
+    background-color: var(--fieldset-background-color);
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    color: var(--main-text-color);
+}
+
+input, textarea, select {
+    margin-bottom: 10px;
+}
