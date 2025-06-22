@@ -216,6 +216,47 @@ button:hover, button:focus {
     outline: none;
 }
 
+.btn-primary, .btn-primary:focus, .btn-primary:active {
+    background-color: var(--primary-button-background-color) !important;
+    border-color: var(--primary-button-background-color) !important;
+    color: #000 !important;
+    font-weight: bold;
+    box-shadow: var(--button-shadow);
+}
+.btn-primary:hover {
+    background-color: var(--primary-button-hover-color) !important;
+    border-color: var(--primary-button-hover-color) !important;
+    color: #000 !important;
+    box-shadow: var(--button-hover-shadow);
+}
+
+/* Personalización del modal de Bootstrap */
+.modal-content {
+    background-color: var(--form-background-color) !important;
+    color: var(--main-text-color) !important;
+    border-radius: 10px;
+    border: 2px solid var(--border-color);
+}
+.modal-header, .modal-footer {
+    background-color: var(--header-background-color) !important;
+    color: var(--main-text-color) !important;
+    border-bottom: 1px solid var(--border-color);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.modal-footer {
+    border-top: 1px solid var(--border-color);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.modal-title {
+    color: var(--primary-button-background-color) !important;
+    font-family: var(--title-font);
+}
+.btn-close {
+    filter: invert(1);
+}
+
 @keyframes pulsate {
     0% { transform: scale(1); }
     50% { transform: scale(1.2); }
@@ -255,24 +296,6 @@ h1:active {
     animation: transform-title 1s ease-in-out;
 }
 
-/* Responsive Design: Ajustes para tablets */
-@media (max-width: 900px) {
-    main {
-        display: flex !important;
-        flex-direction: column !important;
-        gap: 0 !important;
-        margin: 0 !important;
-    }
-    section {
-        width: 100% !important;
-    }
-    aside {
-        width: 100% !important;
-        margin-top: 20px !important;
-    }
-}
-
-/* Responsive Design: Ajustes para móviles */
 @media (max-width: 600px) {
     header, footer, nav, section, article, aside, main, figure, form, fieldset {
         padding: 3vw !important;

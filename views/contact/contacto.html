@@ -15,42 +15,46 @@
     <p>En caso que quieras participar, contáctanos a través de este formulario <strong>¡No te la pierdas!</strong></p>
 
     <!-- Sección de Formularios -->
-    <section>
-        <h2>Coloca tu información de contacto:</h2>
-        <form action="#" method="post">
-            <fieldset>
-                <legend> <strong> Datos Personales </strong> </legend>
-                
-                <label for="nombre">Nombre completo:</label>
-                <input type="text" id="nombre" name="nombre" placeholder="Ej: Juan Pérez" required>
-                
-                <label for="email">Correo electrónico:</label>
-                <input type="email" id="email" name="email" placeholder="ejemplo@dominio.com" required>
-            </fieldset>
-            
-            <fieldset>
-                <legend> <strong> Tema del mensaje </strong> </legend>
-                <select name="select">
-                    <option value="value1">Quiero participar</option>
-                    <option value="value2" >Dudas y consultas</option>
-                    <option value="value3">Interesado en saber más</option>
+    <section class="container mt-4">
+      <h2>Coloca tu información de contacto:</h2>
+      <form class="row g-3" action="#" method="post">
+        <fieldset class="col-12 col-md-6">
+          <legend> <strong> Datos Personales </strong> </legend>
+          
+          <label for="nombre">Nombre completo:</label>
+          <input type="text" id="nombre" name="nombre" placeholder="Ej: Juan Pérez" required>
+          
+          <label for="email">Correo electrónico:</label>
+          <input type="email" id="email" name="email" placeholder="ejemplo@dominio.com" required>
+        </fieldset>
+        
+        <fieldset class="col-12 col-md-6">
+          <legend> <strong> Tema del mensaje </strong> </legend>
+          <select name="select">
+              <option value="value1">Quiero participar</option>
+              <option value="value2" >Dudas y consultas</option>
+              <option value="value3">Interesado en saber más</option>
 
-                </select>
-            </fieldset>
-            
-            <fieldset>
-                <legend><strong>Descripción del mensaje</strong></legend>
+          </select>
+        </fieldset>
+        
+        <fieldset class="col-12">
+          <legend><strong>Descripción del mensaje</strong></legend>
 
-                <label for="comentarios" style="display: block;">Comentarios:</label>
-                <textarea id="comentarios" name="comentarios" rows="4" placeholder="Escribe tus comentarios aquí..." style="display: block;"></textarea>
-            </fieldset>
-            
-            <!--Botones-->
-            <div style="margin-top: 20px;">
-                <button type="submit" id="submit">Enviar</button>
-                <button type="reset" id="reset">Limpiar</button>
-            </div>
-        </form>
+          <label for="comentarios" style="display: block;">Comentarios:</label>
+          <textarea id="comentarios" name="comentarios" rows="4" placeholder="Escribe tus comentarios aquí..." style="display: block;"></textarea>
+        </fieldset>
+
+        <div class="alert alert-info" role="alert">
+        ¡Recuerda llenar todos los campos!
+        </div>
+        
+        <!--Botones-->
+        <div class="col-12" style="margin-top: 20px;">
+          <button type="submit" id="submit" class="btn btn-warning">Enviar</button>
+          <button type="reset" id="reset" class="btn btn-secondary">Limpiar</button>
+        </div>
+      </form>
     </section>
 
     <!-- Botón flotante -->

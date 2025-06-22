@@ -6,23 +6,32 @@
     <title>Mi Revista Digital</title>
     <link rel="icon" href="assets/icons/real-madrid.png" type="image/png" sizes="16x16">
     <link rel="stylesheet" href="shared/css/styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </head>
 <body>
 
     <!-- Encabezado principal -->
     <header>
         <h1>Mi Revista Digital</h1>
-
         <h2>La mejor revista para estar informado de la actualidad deportiva</h2>
-        <nav>
-            <ul>
-        
-                <li><a href="#temas-populares">Blog</a></li>
-                <li><a href="#articulo1">Noticias</a></li>
-                <li><a href="views/contact/contacto.html" target="_blank">Contacto</a></li>
-                <li><a href="views/config/configuración.html" target="_blank">Configuración</a></li>
-                <li><a href="#sobremi">Sobre mí</a></li>
-            </ul>
+        <nav class="navbar navbar-expand-lg" style="background-color: var(--nav-background-color);">
+          <div class="container-fluid">
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+              aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+              <ul class="navbar-nav">
+                <li class="nav-item"><a class="nav-link" style="color: #fff;" href="#temas-populares">Blog</a></li>
+                <li class="nav-item"><a class="nav-link" style="color: #fff;" href="#articulo1">Noticias</a></li>
+                <li class="nav-item"><a class="nav-link" style="color: #fff;" href="views/contact/contacto.html" target="_blank">Contacto</a></li>
+                <li class="nav-item"><a class="nav-link" style="color: #fff;" href="views/config/configuración.html" target="_blank">Configuración</a></li>
+                <li class="nav-item"><a class="nav-link" style="color: #fff;" href="#sobremi">Sobre mí</a></li>
+              </ul>
+            </div>
+          </div>
         </nav>
     </header>
 
@@ -99,6 +108,7 @@
 
     <!-- Pie de página -->
     <footer>
+        
         <p>Contacto: santidefreitas@gmail.com</p>
         <audio src="assets/audio y videos/Hala Madrid ... y nada más.mp3" autoplay controls>
             Tu navegador no soporta el elemento audio.
@@ -109,6 +119,26 @@
             <dt>SEO</dt>
             <dd>Optimización para motores de búsqueda, utilizada para mejorar la visibilidad de un sitio web.</dd>
         </dl>
+
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#infoModal">
+        Más información
+        </button>
+        <div class="modal fade" id="infoModal" tabindex="-1" aria-labelledby="infoModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="infoModalLabel">Información</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+            </div>
+            <div class="modal-body">
+                Aquí puedes colocar información adicional sobre la revista o el formulario.
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+            </div>
+            </div>
+        </div>
+        </div>
         <p>&copy; 2025 Mi Revista Digital. Todos los derechos reservados.</p>
     </footer>
 
