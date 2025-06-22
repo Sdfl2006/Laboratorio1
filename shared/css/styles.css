@@ -314,6 +314,21 @@ h1:active {
         flex-direction: column;
         gap: 5vw;
     }
+    nav.navbar {
+        justify-content: center !important;
+        text-align: center;
+        margin: 2vw auto 0 auto !important;
+        width: 100%;
+        border-radius: 8px;
+    }
+    .navbar-collapse {
+        justify-content: center !important;
+        text-align: center;
+    }
+    .navbar-nav {
+        align-items: center !important;
+        width: 100%;
+    }
     article, section, aside {
         width: 100%;
         box-sizing: border-box;
@@ -375,5 +390,13 @@ h1:active {
     }
     article {
         margin-bottom: 5vw !important;
+    }
+    footer p, footer audio, footer dl {
+        margin-bottom: 1vw !important;
+        margin-top: 1vw !important;
+    }
+    .modal-dialog {
+        margin: 10vw auto;
+        margin-top: 10px;
     }
 }
