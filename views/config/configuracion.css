@@ -84,3 +84,85 @@ label {
 input, textarea, select {
     margin-bottom: 10px;
 }
+
+/* Responsive para tabla de usuarios */
+@media (max-width: 700px) {
+    table, thead, tbody, th, td, tr {
+        display: block;
+        width: 100%;
+    }
+    thead {
+        display: none;
+    }
+    tr {
+        margin-bottom: 20px;
+        border-bottom: 2px solid var(--border-color);
+        background: var(--form-background-color);
+        border-radius: 10px;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+        padding: 10px 0;
+    }
+    td {
+        text-align: left;
+        padding: 12px 10px 12px 45%;
+        position: relative;
+        min-height: 48px;
+        border: none;
+        border-bottom: 1px solid var(--border-color);
+        word-break: break-word;
+        box-sizing: border-box;
+        background: transparent;
+    }
+    
+    /* Etiquetas para cada columna */
+    td:nth-of-type(1):before { content: "Imagen de perfil"; }
+    td:nth-of-type(2):before { content: "Correo: "; }
+    td:nth-of-type(3):before { content: "Nombre: "; }
+    td:nth-of-type(4):before { content: "Apellido: "; }
+    td:nth-of-type(5):before { content: "Cédula: "; }
+    td:nth-of-type(6):before { content: "Fecha de nacimiento: "; }
+
+    td:nth-of-type(1) img {
+        width: 40px !important;
+        height: 40px !important;
+        border-radius: 50%;
+        margin-left: 10px;
+        margin-right: 0;
+        display: inline-block;
+        vertical-align: middle;
+    }
+    fieldset {
+        padding: 4vw 3vw 3vw 3vw !important;
+        margin: 0 !important;
+        min-width: 0;
+        width: 100%;
+        box-sizing: border-box;
+    }
+    legend {
+        font-size: 5vw;
+        padding: 2vw 3vw;
+        text-align: left;
+    }
+    label {
+        font-size: 4vw;
+        margin-bottom: 2vw;
+    }
+    input, select, textarea, #boton-fieldset {
+        font-size: 4vw;
+        width: 100%;
+        box-sizing: border-box;
+        margin-bottom: 3vw;
+    }
+    button[type="submit"] {
+        padding: 3vw 0;
+        font-size: 4vw;
+    }
+    .radio-label {
+        margin: auto;
+        margin-top: 10px;
+        margin-bottom: 15px;
+        margin-left: 2px;
+        font-size: 13px;
+        text-align: center;
+    }
+}
