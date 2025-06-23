@@ -66,8 +66,8 @@ index.html
     - Al enviar, los datos se envían por POST y la respuesta se guarda en localStorage.
 5. Explora los componentes Bootstrap (cards, modals, alerts) y verifica el diseño responsive en diferentes dispositivos.
 
-.[!IMPORTANT]
-Si quieres ver el proyecto desplegado, ingresa en el navegador este link: https://mirevista.netlify.app/
+>[!TIP]
+>Si quieres ver el proyecto desplegado, ingresa en el navegador este link: https://mirevista.netlify.app/
 
 ---
 
