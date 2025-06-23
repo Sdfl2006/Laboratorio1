@@ -1,30 +1,90 @@
 # Mi Revista Digital
 
-Este proyecto es una revista digital enfocada en noticias deportivas destacadas. Aquí encontrarás artículos, imágenes, videos y más contenido relacionado con el mundo del deporte.
+Este proyecto es una revista digital deportiva desarrollada como parte del Laboratorio 1. Incluye noticias, galería, formularios y configuración de usuario, todo con una interfaz moderna y responsive.
 
-## Contenido
-
-- **Encabezado principal**: Título y descripción de la revista.
-- **Navegación**: Enlaces a diferentes secciones como Blog, Noticias, Contacto, Configuración y Sobre mí.
-- **Temas populares**: Lista de artículos destacados.
-- **Últimas noticias**: Artículos con imágenes, videos y descripciones detalladas.
-- **Configuración**: Formulario para personalizar el perfil del usuario, cambiar la contraseña y gestionar preferencias.
-- **Contacto**: Formulario para que los usuarios puedan enviar mensajes, dudas o comentarios.
-- **Sobre mí**: Información sobre el autor de la revista.
-- **Pie de página**: Información de contacto, audio y glosario de términos.
+---
 
 ## Tecnologías utilizadas
 
-- **HTML5**: Para la estructura del contenido.
-- **CSS3**: Para el diseño y estilo (en desarrollo).
-- **JavaScript**: Para funcionalidades interactivas (en desarrollo).
+- **HTML5** y **CSS3** (con variables y estilos personalizados)
+- **Bootstrap 5** (navbar, grid, cards, modals, alerts, etc.)
+- **JavaScript** (fetch API, localStorage)
+- **Google Fonts** (Roboto, Playfair Display)
 
-## Cómo ejecutar el proyecto
+---
 
-1. Clona este repositorio en tu máquina local.
-2. Abre el archivo `index.html` en tu navegador, utilizando la extensión de live server para visualizar la revista.
+## Funcionalidades principales
 
-## Autor
+- **Navbar Bootstrap:**  
+  El menú de navegación utiliza el componente navbar de Bootstrap, adaptado a la identidad visual del proyecto.
 
-**Santiago De Freitas**  
-Contacto: santidefreitas@gmail.com
+- **Sistema de grillas Bootstrap:**  
+  Las secciones principales (galerías, formularios, etc.) usan el sistema de grillas de Bootstrap para asegurar un diseño responsive y ordenado.
+
+- **Componentes Bootstrap adicionales:**  
+  Se emplean cards para artículos, modals para información adicional y alerts para mensajes al usuario.
+
+- **Formularios con fetch API:**  
+  Todos los formularios envían sus datos mediante una petición POST a `https://jsonplaceholder.typicode.com/posts` usando fetch API.  
+  La respuesta JSON de cada envío exitoso se almacena automáticamente en el localStorage del navegador.
+
+- **Estilos personalizados:**  
+  Los colores, fuentes y sombras están definidos en [`shared/css/vars.css`](shared/css/vars.css) para mantener la coherencia visual y la marca.
+
+---
+
+## Estructura del proyecto
+
+```
+/assets
+    /audio y videos
+    /icons
+    /img
+/shared
+    /css
+        styles.css
+        vars.css
+    shared.js
+/views
+    /contact
+        contacto.html
+        contact.css
+    /config
+        configuración.html
+        configuracion.css
+index.html
+```
+
+---
+
+## Cómo probar el proyecto
+
+1. **Clona o descarga** este repositorio.
+2. Abre `index.html` en tu navegador.
+3. Navega entre las secciones usando el navbar.
+4. Prueba los formularios en las vistas de contacto y configuración:
+    - Al enviar, los datos se envían por POST y la respuesta se guarda en localStorage.
+5. Explora los componentes Bootstrap (cards, modals, alerts) y verifica el diseño responsive en diferentes dispositivos.
+
+.[!IMPORTANT]
+Si quieres ver el proyecto desplegado, ingresa en el navegador este link: https://mirevista.netlify.app/
+
+---
+
+## Personalización de estilos
+
+- Todos los colores y fuentes principales están definidos en [`shared/css/vars.css`](shared/css/vars.css).
+- Puedes modificar estos valores para adaptar la identidad visual a tus preferencias.
+
+---
+
+## Créditos
+
+Desarrollado por Santiago De Freitas  
+
+---
+
+## Notas
+
+- El backend de pruebas para los formularios es [JSONPlaceholder](https://jsonplaceholder.typicode.com/), por lo que los datos no se almacenan realmente en un servidor, solo en tu navegador.
+- Si tienes problemas con el envío de formularios, asegúrate de que JavaScript esté habilitado en tu navegador.
